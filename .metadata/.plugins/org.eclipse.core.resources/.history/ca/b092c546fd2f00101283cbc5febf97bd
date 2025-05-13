@@ -1,0 +1,24 @@
+package com.vopa.vschool.model;
+
+import jakarta.persistence.*;
+import java.time.LocalDate;
+
+@Entity
+public class Assignment {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private Long teacherId;
+    private Long studentId;
+    private Long lessonId;
+
+    private LocalDate assignedDate;
+    private LocalDate dueDate;
+    private LocalDate completedDate;
+
+    @Enumerated(EnumType.STRING)
+    private AssignmentStatus status;
+
+    // Getters and Setters
+}

@@ -1,0 +1,12 @@
+create database vschool;
+use vschool;
+CREATE TABLE assignments (
+  assignment_id BIGINT PRIMARY KEY,
+  teacher_id BIGINT,
+  student_id BIGINT,
+  lesson_id BIGINT,
+  status VARCHAR(20), -- assigned, completed
+  assigned_date DATE,
+  completed_date DATE,
+  due_date DATE
+);

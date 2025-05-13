@@ -1,0 +1,12 @@
+package com.vopa.vschool.dto;
+
+import java.time.LocalDate;
+
+public class AssignmentRequest {
+    private Long teacherId;
+    private Long studentId;
+    private Long lessonId;
+    private LocalDate dueDate;
+
+    // Getters and Setters
+}
